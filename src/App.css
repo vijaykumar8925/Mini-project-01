@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.parent-tag{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  height: 100vh;
+  background-color: #6495ED;
+}
+
+.child-tag{
+  width: 20%;
+  background-color: #4169E1;
+  border-radius: 6px;
+}
+
+.button-upload {
+  /* Reset OS-specfic / browser-specific default style (see https://ishadeed.com/article/styling-the-good-old-button/#the-default-styles) */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #4169E1; /* to be replaced with your custom design */
+  border: 2px dashed white; /* to be replaced with your custom design */
+  /* Signify interactivity */
+  border-radius: 12px; /* no physical button has a sharp corner; exact value to be replaced for your custom design */
+  cursor: pointer;
+  /* Match font style with the parent element */
+  font: inherit;
+  /* Make the button easy for touchscreen users to tap */
+  min-height: 48px;
+  min-width: 48px;
+  margin: 20px;
+  margin-bottom: 0;
+  padding: 30px;
+  width: 90%;
+}
+.button-upload:focus {
+  outline-offset: 4px; /* make Chrome show a focus ring around the button */
+}
+
+.logo{
+  margin: 20px;
+}
+
+.text{
+  margin: 20px;
+  padding-bottom: 20px;
+}
+
+.document{
   color: white;
+  text-align: left;
+  margin: 10px;
+  padding-left: 18px;
+  margin-bottom: 0;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.control{
+  border: 2px solid white;
+  margin: 30px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }

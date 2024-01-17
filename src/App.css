@@ -29,8 +29,9 @@
   min-height: 48px;
   min-width: 48px;
   margin: 10px;
+  margin-top: 20px;
   margin-bottom: 0;
-  padding: 30px;
+  padding: 20px;
   width: 90%;
 }
 .button-upload:focus {
